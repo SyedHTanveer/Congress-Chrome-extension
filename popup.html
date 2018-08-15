@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Congress Legislation</title>
+    <meta charset = "UTF-8" />
+
+    <!-- Bootstrap 4.1.3 CRN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="popup.css" >
+
+    <!-- Jquery library -->
+    <script type="text/javascript" src="jquery-3.3.1.min.js" ></script>
+
+    <!-- Scripts for the plugin -->
+    <script type="text/javascript" src="popup.js"></script></script>
+
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <p class="col-12">
+          <form method="get" target="_top" role="search" action="https://congress.gov/search" >
+            <div id="search-wrapper" class="search_wrapper">
+              <div class="search_formats">
+                <select id="search-format" name="search-source" onsubmit="">
+                  <option value="current-legislation">Current Legislation</option>
+                  <option value="legislation">All Legislation</option>
+                  <option value="all-sources">All Sources</option>
+                  <option value="--" disabled="disabled">--</option>
+                  <option value="members">Members</option>
+                  <option value="congrecord">Congressional Record</option>
+                  <option value="comreports">Committee Reports</option>
+                  <option value="nominations">Nominations</option>
+                  <option value="treaties">Treaty Documents</option>
+                  <option value="house-communications">House Communications</option>
+                  <option value="senate-communications">Senate Communications</option>
+                </select>
+                <input id="search" type="text" class="locsuggest" name="q" placeholder="Examples: hr5, sres9, &quot;health care&quot;" value="">
+                <button class="search_submit" id="search-submit" type="submit">GO</button>
+              </div>
+            </div>
+          </form>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

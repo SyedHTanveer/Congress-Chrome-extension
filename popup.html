@@ -19,13 +19,13 @@
 
   </head>
   <body>
-    <div class="container-fluid">
+    <div class="mt-3">
       <div class="d-flex justify-content-center">
         <p>
-          <form method="get" target="_top" role="search" action="https://congress.gov/search" >
-            <div id="search-wrapper" class="search_wrapper">
-              <div class="search_formats">
-                <select id="search-format" name="search-source" onsubmit="">
+          <form class="form-inline" method="get" target="_top" role="search" action="https://congress.gov/search" >
+            <div id="search-wrapper input-group" class="search_wrapper">
+              <div class="search_formats row">
+                <select class="col-4" id="search-format" name="search-source" onsubmit="">
                   <option value="current-legislation">Current Legislation</option>
                   <option value="legislation">All Legislation</option>
                   <option value="all-sources">All Sources</option>
@@ -38,8 +38,11 @@
                   <option value="house-communications">House Communications</option>
                   <option value="senate-communications">Senate Communications</option>
                 </select>
-                <input id="search" type="text" class="locsuggest" name="q" placeholder="Examples: hr5, sres9, &quot;health care&quot;" value="">
-                <button class="search_submit" id="search-submit" type="submit">GO</button>
+                  <input id="search" type="text" class="form-control locsuggest col-6" name="q" placeholder="Examples: hr5, sres9, &quot;health care&quot;" value="">
+                    <div class="input-group-append">
+                      <button class="btn btn-sm btn-dark search_submit" id="search-submit" type="submit">GO</button>
+                    </div>
+                </div>
               </div>
             </div>
           </form>

@@ -1,9 +1,10 @@
+
 chrome.tabs.executeScript(
   {code: "window.getSelection().toString();"},
   function(selection) {
   $('#search').val(selection[0]);
   document.querySelector('button').onclick = function(e) {
-    
+
     switch($('#search-format').val()) {
 
       case "current-legislation":

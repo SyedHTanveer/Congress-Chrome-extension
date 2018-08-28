@@ -17,11 +17,7 @@
       "css": []
     }
   ],
-
-  "background": {
-    "scripts": ["jquery-3.3.1.min.js", "background.js"],
-    "persistent": false
-  },
+  
   "browser_action": {
     "default_popup": "popup.html",
     "default_title": "Lookup legislation!"

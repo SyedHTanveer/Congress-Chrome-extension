@@ -27,7 +27,7 @@ window.addEventListener('mouseup', function () {
 
     console.log(selectedText);
     $("body:contains(" + mainText + ")").html(function(_, html) {
-       return html.split(mainText).join("<span class='tooltip'>" + mainText + "<span class='tooltiptext'>" + "loading..." + "</span></span>");
+       return html.split(mainText).join("<a class='tooltip' href='" + selectedText +"'>" + mainText + "<span class='tooltiptext'>" + "loading..." + "</span></a>");
      });
 
     let message = {
@@ -40,5 +40,6 @@ window.addEventListener('mouseup', function () {
 
 chrome.runtime.onMessage.addListener(
   function(request, sender, sendResponse) {
-     $( ".tooltiptext" ).text(request.text);
+    console.log(request);
+     $( ".tooltiptext" ).html(request);
 });

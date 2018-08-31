@@ -1,3 +1,11 @@
+// Author: Syed Tanveer
+// Last modified: August 31st, 2018
+// OCIO: Congress.gov chrome extension
+
+//
+//
+//
+//
 
 chrome.tabs.executeScript(
   {code: "window.getSelection().toString();"},

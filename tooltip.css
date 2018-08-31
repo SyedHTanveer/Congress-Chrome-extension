@@ -5,6 +5,7 @@
 }
 
 .tooltip .tooltiptext {
+  font-size: 12px;
     visibility: hidden;
     width: 120px;
     background-color: white;
